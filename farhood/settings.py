@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'u5iq9&@jyd-!bxv7=c^8^knj+yqdm88_3(8ssqn2w&li$&_sbb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['farhoodmedia.com']
+ALLOWED_HOSTS = ['farhoodmedia.com', 'localhost']
 
 
 # Application definition

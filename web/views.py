@@ -8,7 +8,7 @@ def index(request):
 
 def sports(request):
     # Todo: Sort the Posts and bring only the Sports Posts to this section
-    sportnews = Post.objects.all()
+    sportnews = Post.objects.filter(category=1)
     context = {"sportsnews": sportnews}
     return render(request, 'sports/sports.html', context)
 

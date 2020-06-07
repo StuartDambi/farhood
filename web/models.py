@@ -11,8 +11,8 @@ class PostCategory(models.Model):
 
 
 class Post(models.Model):
-    # todo: Enable a user to have many Posts
-    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
+    # todo: Enable a user to have many Posts --Post.objects.filter(author=user)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     title = models.CharField(max_length=50)
     body = models.CharField(max_length=300)
     photo = models.ImageField()
